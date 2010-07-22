@@ -40,6 +40,7 @@ class apt {
 
   exec { "apt-get_update":
     command => "apt-get update",
+    path => "/usr/bin", 
     refreshonly => true,
   }
 }
